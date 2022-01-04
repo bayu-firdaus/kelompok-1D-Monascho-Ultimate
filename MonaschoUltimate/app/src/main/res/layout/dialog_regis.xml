@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:id="@+id/a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2px">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="2dp"
+            app:cardUseCompatPadding="true"
+            android:foreground="?android:selectableItemBackground">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/l1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingTop="5dp">
+
+                            <TextView
+                                android:id="@+id/tvTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:text="Registrasi"
+                                android:textColor="@color/color_primary"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:text="No Telephone"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                android:layout_marginLeft="10dp"/>
+
+                            <EditText
+                                android:id="@+id/etUsername"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:background="@drawable/bg_textbox"
+                                android:inputType="number"
+                                android:padding="30px"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:textSize="12sp"
+                                android:hint="Masukan No Telephone"
+                                android:gravity="top"
+                                android:maxLines="1"
+                                android:text="" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:text="Nama Lengkap"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="10dp"/>
+
+                            <EditText
+                                android:id="@+id/etNama"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:background="@drawable/bg_textbox"
+                                android:inputType="text"
+                                android:padding="30px"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:textSize="12sp"
+                                android:hint="Masukan Nama Lengkap"
+                                android:gravity="top"
+                                android:maxLines="1"
+                                android:text="" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:text="Jenis Kelamin"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="10dp"/>
+
+                            <EditText
+                                android:id="@+id/etJk"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:background="@drawable/bg_textbox"
+                                android:inputType="text"
+                                android:padding="30px"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:textSize="12sp"
+                                android:hint="Pilih jenis Kelamin"
+                                android:gravity="top"
+                                android:maxLines="1"
+                                android:text="" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:text="Tanggal Lahir"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="10dp"/>
+
+                            <EditText
+                                android:id="@+id/etTglLahir"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:background="@drawable/bg_textbox"
+                                android:inputType="text"
+                                android:padding="30px"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:textSize="12sp"
+                                android:hint="Tanggal Lahir"
+                                android:gravity="top"
+                                android:maxLines="1"
+                                android:text="" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:text="Email"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="10dp"/>
+
+                            <EditText
+                                android:id="@+id/etEmail"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:background="@drawable/bg_textbox"
+                                android:inputType="text"
+                                android:padding="30px"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:textSize="12sp"
+                                android:hint="Email"
+                                android:gravity="top"
+                                android:maxLines="1"
+                                android:text="" />
+
+<!--                            <TextView-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:gravity="left"-->
+<!--                                android:text="KodePos"-->
+<!--                                android:textColor="@color/black"-->
+<!--                                android:textSize="12sp"-->
+<!--                                android:layout_marginTop="10dp"-->
+<!--                                android:layout_marginLeft="10dp"/>-->
+
+<!--                            <EditText-->
+<!--                                android:id="@+id/etKodepos"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="45dp"-->
+<!--                                android:background="@drawable/bg_textbox"-->
+<!--                                android:inputType="text"-->
+<!--                                android:padding="30px"-->
+<!--                                android:layout_marginStart="10dp"-->
+<!--                                android:layout_marginEnd="10dp"-->
+<!--                                android:textSize="12sp"-->
+<!--                                android:hint="Kodepos"-->
+<!--                                android:gravity="top"-->
+<!--                                android:maxLines="1"-->
+<!--                                android:text="" />-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:gravity="left"-->
+<!--                                android:text="Kecamatan"-->
+<!--                                android:textColor="@color/black"-->
+<!--                                android:textSize="12sp"-->
+<!--                                android:layout_marginTop="10dp"-->
+<!--                                android:layout_marginLeft="10dp"/>-->
+
+<!--                            <EditText-->
+<!--                                android:id="@+id/etKecamatan"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="45dp"-->
+<!--                                android:background="@drawable/bg_textbox"-->
+<!--                                android:inputType="text"-->
+<!--                                android:padding="30px"-->
+<!--                                android:layout_marginStart="10dp"-->
+<!--                                android:layout_marginEnd="10dp"-->
+<!--                                android:textSize="12sp"-->
+<!--                                android:hint="Kecamatan"-->
+<!--                                android:gravity="top"-->
+<!--                                android:maxLines="1"-->
+<!--                                android:text="" />-->
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:text="Alamat"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="10dp"/>
+
+                            <EditText
+                                android:id="@+id/etAlamat"
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:background="@drawable/bg_textbox"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginTop="4dp"
+                                android:textSize="10dp"
+                                android:paddingTop="10dp"
+                                android:gravity="top"
+                                android:paddingLeft="10dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:text="Password"
+                                android:layout_marginTop="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                android:layout_marginLeft="10dp"/>
+
+                            <EditText
+                                android:id="@+id/etPassword"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg_textbox"
+                                android:inputType="textPassword"
+                                android:padding="30px"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:textSize="12sp"
+                                android:maxLines="1"
+                                android:hint="Masukan Password"
+                                android:gravity="top"
+                                android:text="" />
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/l2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/l1"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <ProgressBar
+                                android:id="@+id/pb1"
+                                style="@android:style/Widget.DeviceDefault.Light.ProgressBar"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"/>
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/btnLogin"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:background="@drawable/bg_btn_login"
+                                android:layout_marginTop="15dp"
+                                android:text="Login"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="10dp"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:layout_marginLeft="70dp"
+                                android:layout_marginRight="70dp"
+                                android:visibility="visible"/>
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </androidx.core.widget.NestedScrollView>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</RelativeLayout>
