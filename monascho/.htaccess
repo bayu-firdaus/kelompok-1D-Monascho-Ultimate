@@ -1,0 +1,35 @@
+ErrorDocument 404 /error.html
+
+RewriteEngine On
+Options All -Indexes
+
+
+# RewriteRule ^(.*)$ index.php [F,L]
+
+RewriteRule ^$ index.php [L]
+RewriteRule ^api-makeup/apii/Login/login_konsumen$ webservice/login/login.php [L]
+RewriteRule ^api-makeup/apii/Login/registrasi$ webservice/login/registrasi.php [L]
+
+RewriteRule ^api-makeup/apii/Informasi/informasi$ webservice/informasi/informasi.php [L]
+RewriteRule ^api-makeup/apii/Informasi/informasi_detail/([a-zA-Z0-9-]+)$ webservice/informasi/informasi_detail.php/$1 [L]
+
+RewriteRule ^api-makeup/apii/produk/produk_filter/([a-zA-Z0-9-]+)$ webservice/produk/produk_filter.php?q=$1 [L]
+RewriteRule ^api-makeup/apii/Produk/produk_detail/([a-zA-Z0-9-]+)$ webservice/produk/produk_detail.php/$1 [L]
+
+RewriteRule ^api-makeup/apii/Keranjang/keranjang$ webservice/keranjang/keranjang_post.php [L]
+RewriteRule ^api-makeup/apii/Keranjang/([a-zA-Z0-9-]+)$ webservice/keranjang/keranjang_get.php/$1 [L]
+RewriteRule ^api-makeup/apii/Keranjang/update_keranjang$ webservice/keranjang/keranjang_update.php [L]
+
+RewriteRule ^api-makeup/apii/Transaksi/([a-zA-Z0-9-]+)$ webservice/Transaksi/transaksi_get.php/$1 [L]
+RewriteRule ^api-makeup/apii/Transaksis/transaksi$ webservice/Transaksi/transaksi_post.php [L]
+RewriteRule ^api-makeup/apii/Transaksi/detail/([a-zA-Z0-9-]+)$ webservice/Transaksi/transaksi_detail.php/$1 [L]
+RewriteRule ^api-makeup/apii/Transaksis/uploadBukti$ webservice/Transaksi/transaksi_upload.php [L]
+RewriteRule ^api-makeup/apii/Transaksis/lacakpesanan/([a-zA-Z0-9-]+)$ webservice/Transaksi/transaksi_lacak.php/$1 [L]
+RewriteRule ^api-makeup/apii/Transaksis/konfirmasi_sampai$ webservice/Transaksi/konfirmasi_sampai.php [L]
+RewriteRule ^api-makeup/apii/Transaksis/add_rating$ webservice/Transaksi/transaksi_rating.php [L]
+
+RewriteRule ^api-makeup/apii/profil/profil/([a-zA-Z0-9-]+)$ webservice/profil/profil_get.php/$1 [L]
+RewriteRule ^api-makeup/apii/profil/update_profil$ webservice/profil/profil_update.php [L]
+
+
+
